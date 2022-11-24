@@ -1,3 +1,20 @@
-h1{
+h1, h2, p{
     text-align: center;
 }
+
+/*Add another style to the file that changes the background-color */
+/*property to brown for the body element.*/
+body{
+    background-color: burlywood;
+}
+
+
+
+/*
+You now have three type selectors with the exact same styling.
+You can add the same group of styles to many elements by creating a list of selectors.
+Each selector is separated with commas like this:
+     selector1, selector2 {
+         property: value;
+     }
+*/
