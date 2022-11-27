@@ -1,17 +1,46 @@
+
+/*Responsible for our body background and formatting*/
+body {
+    /*Instead of doing a background color we instead see the usage of using a background image.*/
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
 h1, h2, p{
     text-align: center;
 }
 
 /*Add another style to the file that changes the background-color */
 /*property to brown for the body element.*/
-body{
-    background-color: burlywood;
+/*body{*/
+/*    background-color: burlywood;*/
+/*}*/
+
+
+/*So far you have been using type selectors to style elements:
+
+ div{
+
+ }
+
+A class selector is defined by a name with a dot directly in front of it, like this:
+.class-name {
+  styles
 }
 
+ */
 
 
-div{
-    width: 300px;
+.menu{
+
+    /*Width can be declared as both pixel width (i.e. 300 px width) or a percentyage of a given*/
+    /*area (i.e. 80% of the div width).*/
+    width: 80%;
+    background-color: burlywood;
+
+    /*You want to center the div horizontally, so you set the margin properties*/
+    /*for margin left and right to auto. Think of the margin as invisible space around an element.*/
+    margin-left: auto;
+    margin-top: auto;
 }
 
 
