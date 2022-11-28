@@ -5,6 +5,14 @@ body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
+/*
+You now have three type selectors with the exact same styling.
+You can add the same group of styles to many elements by creating a list of selectors.
+Each selector is separated with commas like this:
+     selector1, selector2 {
+         property: value;
+     }
+*/
 h1, h2, p{
     text-align: center;
 }
@@ -28,8 +36,6 @@ A class selector is defined by a name with a dot directly in front of it, like t
 }
 
  */
-
-
 .menu{
 
     /*Width can be declared as both pixel width (i.e. 300 px width) or a percentyage of a given*/
@@ -43,15 +49,38 @@ A class selector is defined by a name with a dot directly in front of it, like t
     margin-top: auto;
 }
 
+/*Handles all our flavor formatting */
+.flavor{
+    text-align: left;
+    /* Check Actual fix changed from 50% -> 49% -> 50% after setting elements p on same line  */
+    width: 75%;
+}
+
+/*Handles all our price formatting*/
+.price{
+    text-align: right;
+    /* Check Actual fix changed from 50% -> 49% -> 50 after setting elements p on same line  */
+    width: 25%;
+}
 
 
+/*The p elements are nested in an article element with the class attribute of item. */
+/*You can style all the p elements nested anywhere in elements with a class named item like this:*/
+
+.item p {
+
+    /*############### First Step (what we initially tried) #########################*/
+    /*That's closer, but the price didn't stay over on the right.*/
+    /*This is because inline-block elements only take up the width of their content. To spread */
+    /*them out, add a width property to the flavor and price class selectors that have a value */
+    /*of 50% each.*/
+
+    /*############### Our Actual Fix ##########################*/
+    /*Styling the p elements as inline-block and placing them on separate lines in the code creates */
+    /*an extra space to the right of the first p element, causing the second one to shift to the next line. */
+    /*One way to fix this is to make each p element's width a little less than 50%.*/
+
+    display: inline-block;
 
 
-/*
-You now have three type selectors with the exact same styling.
-You can add the same group of styles to many elements by creating a list of selectors.
-Each selector is separated with commas like this:
-     selector1, selector2 {
-         property: value;
-     }
-*/
+}
